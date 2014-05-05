@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Website</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" media="(min-width: 1200px)" href="css/media-large.css" />
+    <link rel="stylesheet" media="(min-width: 768px) and (max-width: 979px)" href="css/media-tablet.css" />
+    <link rel="stylesheet" media="(max-width: 767px)" href="css/media-tablet.css" />
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/media-phone.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -19,68 +23,69 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target=".navbar">
-    <div>
-        <nav id = "haha" class="navbar navbar-default navbar-fixed-top m-nav" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class = "m-div-logo" >
-              <a title = "ajdeguzman" href="#">
-                <img src="images/logo.png" height = "50px" width = "50px">
-              </a>
-            </div>
-          </div>
-            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+      <div>
+          <nav class="navbar navbar-default navbar-fixed-top m-nav"  id = "top" role="navigation">
+                 <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class = "m-div-logo" >
+                    <a title = "ajdeguzman" href="#">
+                      <img src="images/logo.png" height = "50px" width = "50px">
+                    </a>
+                  </div>
+                </div>
+            <nav class="collapse navbar-collapse" role = "navigation" id="my-navbar-collapse">
               <div class = "navbar-inner" >
-                   <ul class="nav navbar-nav animated slideInDown">
-                     <li class = "active"><a href="#about"  data-scroll="" data-options="easing: easeInQuint; speed: 800;">About</a></li>
-                     <li><a href="#blog"  data-scroll="" data-options="easing: easeInQuint; speed: 800;" >Blog</a></li>
-                     <li><a href="#portfolio"  data-scroll="" data-options="easing: easeInQuint; speed: 800;" >Portfolio</a></li>
-                     <li><a href="#contact"  data-scroll="" data-options="easing: easeInQuint; speed: 800;">Contact</a></li>
+                   <ul class="nav navbar-nav navbar-right">
+                     <li class = "active"><a href="#about"  data-scroll="" data-options="easing: easeInQuint; speed: 800;">ABOUT</a></li>
+                     <li><a href="#blog"  data-scroll="" data-options="easing: easeInQuint; speed: 800;" >BLOG</a></li>
+                     <li><a href="#portfolio"  data-scroll="" data-options="easing: easeInQuint; speed: 800;" >PORTFOLIO</a></li>
+                     <li><a href="#contact"  data-scroll="" data-options="easing: easeInQuint; speed: 800;">CONTACT</a></li>
                    </ul>
               </div>
-            </div>
+            </nav>
         </nav>
     </div>
-    <section id = "about" class = "m-sections" style = "padding-top: 200px">
-      <div class = "m-section-about container" style = "text-align:center">
+    <section id = "about" style = "padding-top: 200px">
+      <div class = "m-section-about container">
         <aside style = "position:absolute;display:block;left:50%;margin-left: -319px;">            
               <img style = "display:inline-block;position:relative;" src="images/taylor.jpg" width = "200" class="img-circle m-about-image">
-            <div class = "animated fadeInUp" style = "text-align:left;position:relative;display: inline-block;top: 40px;padding-left:2em">
+            <div class = "m-about-desc animated fadeInUp" style = "position:relative;display:inline-block;top: 40px;padding-left:2em">
               <span class = "m-about-title">Hi, I'm Taylor.</span><br>
               <span class = "m-about-sub-title">I'm a Mobile + Web Developer.</span>
             </div>
         </aside>
           <br><br>
         <aside style = "position:absolute;bottom:10px;font-size:30px;left:50%;" class = "anim bounce">
-            <a href="#blog"  data-scroll="" data-options="easing: easeInOutQuad" ><i class="fa fa-angle-down fa-lg"></i></a>
+            <a href="#blog"  data-scroll="" data-options="easing: easeInOutQuad"><i class="fa fa-angle-down fa-lg"></i></a>
         </aside>
       </div>
     </section>
-    <section id = "process"  class = "m-sections">
-     <div class = "container">
+    <section id = "process">
+     <div>
         <h1>PROJECT WORKFLOW</h1>
         <br><br>
         <div style = "display:block">
-                   <div class="row">
+                   <div class = "row" align = "center">
                       <div class="col-md-3">
-                          <div><img src="images/processes/plan.png" width = "200" class="wow img-circle scale-in-anim"></div>
-                          <div><h2 class = "wow fadeInUp">Plan</h2></div>
+                          <div><img src="images/processes/plan.png" width = "200" data-wow-delay="0.2s" class="wow delay-1 img-circle scale-in-anim img-responsive" ></div>
+                          <div><h2 data-wow-delay="0.2s" class = "wow delay-1 fadeInUp">Plan</h2></div>
                       </div>
                       <div class="col-md-3">
-                          <div><img src="images/processes/design.png" width = "200" class="wow img-circle scale-in-anim"></div>
-                          <div><h2 class = "wow fadeInUp">Design</h2></div>
+                          <div><img src="images/processes/design.png" data-wow-delay="0.4s" width = "200" class="wow delay-2 img-circle scale-in-anim img-responsive"></div>
+                          <div><h2 data-wow-delay="0.4s" class = "wow delay-2 fadeInUp">Design</h2></div>
                       </div>
                       <div class="col-md-3">
-                          <div><img src="images/processes/develop.png" width = "200" class="wow img-circle scale-in-anim"></div>
-                          <div><h2 class = "wow fadeInUp">Develop</h2></div>
+                          <div><img src="images/processes/develop.png"data-wow-delay="0.6s" width = "200" class="wow delay-3 img-circle scale-in-anim img-responsive"></div>
+                          <div><h2 data-wow-delay="0.6s" class = "wow delay-3 fadeInUp">Develop</h2></div>
                       </div>
                       <div class="col-md-3">
-                          <div><img src="images/processes/test.png" width = "200" class="wow img-circle scale-in-anim"></div>
-                          <div><h2 class = "wow fadeInUp">Test</h2></div>
+                          <div><img src="images/processes/test.png"data-wow-delay="0.8s" width = "200" class="wow delay-4 img-circle scale-in-anim img-responsive"></div>
+                         <div><h2 data-wow-delay="0.8s" class = "wow delay-4 fadeInUp">Test</h2></div>
                       </div>
                   </div>
         </div>
@@ -96,20 +101,22 @@
         </div>
       </div>
     </section>
-    <section id = "portfolio" class = "m-sections">
+    <section id = "portfolio">
       <div class = "container">
         <h1>RECENT WORK</h1>
         <br><br>
         <div>
             <div align = "center">
+                  
              </div>
         </div>
       </div>
     </section>
-    <section id = "contact" class = "m-sections">
-      <div class = "container">
+    <section id = "contact">
+      <div class = "container form-group">
         <h1>GET IN TOUCH</h1>
-        <h2>Feel free to send me a message if you have any question. I'd love to hear from you.</h2>
+        <h2>Feel free to send me a message if you have any question.</h2>
+        <h2> I'd love to hear from you.</h2>
         <br><br>
         <div>
             <div align = "center">
@@ -117,13 +124,13 @@
                     <div class="row">
                           <label class = "col-md-2"></label>
                               <div>
-                                  <input type="text" placeholder = "Name" class="m-frm-textinput col-md-5" name="sender_name" id="sender_name" value="">
+                                  <input type="text" placeholder = "Name" class="form-control m-frm-textinput col-md-5" name="sender_name" id="sender_name" value="">
                               </div>
                     </div><br>
                     <div class="row">
                           <label class = "col-md-2"></label>
                               <div>
-                                  <input type="email" placeholder = "Email" class="m-frm-textinput col-md-5" name="sender_name" id="sender_name" value="">
+                                  <input type="email" placeholder = "Email" class="form-control m-frm-textinput col-md-5" name="sender_name" id="sender_name" value="">
                               </div>
                     </div><br>
                     <div class="row">
@@ -146,22 +153,18 @@
               <img src="images/logo.png" height = "44px">
             </div>
             <div class = "m-footer-block">
-              <span>&copy; 2014 Aljohn De Guzman</span>
+              <span>ALL RIGHTS RESERVED. ALJOHN DE GUZMAN 2014.</span>
             </div>
             <div class = "m-footer-block">
-              <ul class="list-inline">
-                <li><a target = "_blank" href="https://twitter.com/myajdeguzman"><img width="25" src="images/social/twitter.png"></a></li>
-                <li><a target = "_blank"  href="http://github.com/aljanix"><img width="25" src="images/social/github.png"></a></li>
-                <li><a target = "_blank"  href="http://facebook.com/aljohnix"><img width="25" src="images/social/facebook.png"></a></li>
-                <li><a target = "_blank"  href="http://ph.linkedin.com/pub/aljohn-de-guzman/57/b82/4b5/"><img width="25" src="images/social/linkedin.png"></a></li>
-                <li><a target = "_blank"  href="http://plus.google.com/+aljohndeguzman"><img width="25px" src="images/social/google.png"></a></li>
-
+              <ul class="list-inline" style = "float:right">
+                <li><a target = "_blank" href="https://twitter.com/myajdeguzman"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a target = "_blank"  href="http://github.com/aljanix"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a target = "_blank"  href="http://facebook.com/aljohnix"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a target = "_blank"  href="http://plus.google.com/+aljohndeguzman"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                <li><a target = "_blank"  href="http://ph.linkedin.com/pub/aljohn-de-guzman/57/b82/4b5/"><i class="fa fa-linkedin fa-lg"></i></li>
               </ul>
             </div>
         </div>
-      <div>
-
-      </div>
     </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

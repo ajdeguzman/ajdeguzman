@@ -1,0 +1,17 @@
+/* Large desktop */
+@media (min-width: 1200px) {
+	#about,#process,#blog,#contact,#portfolio{
+		height:900px;
+	}
+	.m-about-desc{
+		text-align:left;
+	}
+}
+@media (min-width:1025px) {
+	#about,#process,#blog,#contact,#portfolio{
+		height:900px;
+	}
+	.m-about-desc{
+		text-align:left;
+	}
+}

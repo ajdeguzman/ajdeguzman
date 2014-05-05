@@ -1,0 +1,18 @@
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#about,#blog,#contact,#portfolio{
+			height:900px;
+		}
+	#process{
+		height: 1500px;
+	}
+}
+
+@media (max-width: 800px) {
+	#about,#blog,#contact,#portfolio{
+			height:1500px;
+		}
+	#process{
+		height: 1500px;
+	}
+}
