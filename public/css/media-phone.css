@@ -6,6 +6,9 @@
 	#process{
 		height: 1500px;
 	}
+	.m-arrow-down{
+		visibility: hidden;
+	}
 }
 
 @media (max-width: 800px) {
@@ -14,5 +17,8 @@
 		}
 	#process{
 		height: 1500px;
+	}
+	.m-arrow-down{
+		visibility: hidden;
 	}
 }

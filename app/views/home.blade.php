@@ -25,7 +25,7 @@
   </head>
   <body data-spy="scroll" data-target=".navbar">
       <div>
-          <nav class="navbar navbar-default navbar-fixed-top m-nav"  id = "top" role="navigation">
+          <nav id = "m-nav" class="navbar-default m-nav"  id = "top" role="navigation">
                  <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -54,9 +54,9 @@
     <section id = "about" style = "padding-top: 200px">
       <div class = "m-section-about container">
         <aside style = "position:absolute;display:block;left:50%;margin-left: -319px;">            
-              <img style = "display:inline-block;position:relative;" src="images/taylor.jpg" width = "200" class="img-circle m-about-image">
+              <img style = "display:inline-block;position:relative;" src="images/conan.png" width = "200" class="img-circle m-about-image">
             <div class = "m-about-desc" style = "position:relative;display:inline-block;top: 40px;padding-left:2em">
-              <span  data-wow-delay="0.2s" class = "wow delay-1 m-about-title fadeInUp">Hi, I'm Taylor.</span><br>
+              <span  data-wow-delay="0.2s" class = "wow delay-1 m-about-title fadeInUp">Hi, I'm Conan.</span><br>
               <span  data-wow-delay="0.4s" class = "wow delay-2 m-about-sub-title flipInY">I'm a Mobile + Web Developer.</span>
             </div>
         </aside>
@@ -179,6 +179,15 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class = "container">
+        <div class = "row">
+
+        </div>
+      </div>
+      <div class = "container" id="map_canvas">
+      </div>
+    </section>
     <nav class="m-footer">
         <div class = "container">
             <div class = "m-footer-block">
@@ -204,6 +213,7 @@
       </a>
     </div>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/wow.min.js"></script>

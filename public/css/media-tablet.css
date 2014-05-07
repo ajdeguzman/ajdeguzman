@@ -3,12 +3,21 @@
 	#about,#process,#blog,#contact,#portfolio{
 		height:1300px;
 	}
+	.m-arrow-down{
+		visibility: hidden;
+	}
 } 
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	#about,#process,#blog,#contact,#portfolio{
+	#about,#contact,#portfolio{
+		height:1000px;
+	}
+	#process{
 		height:1300px;
+	}
+	#blog{
+		height:1200px;
 	}
 	.m-about-image{
 		display: inline-block;
@@ -16,6 +25,9 @@
 	}
 	.m-about-desc, #about{
 		text-align: center;
+	}
+	.m-arrow-down{
+		visibility: hidden;
 	}
 
 }
