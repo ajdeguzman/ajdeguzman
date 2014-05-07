@@ -13,6 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+    <lnk href="css/font-awesome-animation.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -42,7 +43,7 @@
               <div class = "navbar-inner" >
                    <ul class="nav navbar-nav navbar-right">
                      <li class = "active"><a href="#about"  data-scroll="" data-options="easing: easeInQuint; speed: 800;">ABOUT</a></li>
-                     <li><a href="#blog"  data-scroll="" data-options="easing: easeInQuint; speed: 800;" >BLOG</a></li>
+                     <li><a  class = "faa-wrench animated-hover" href="#blog"  data-scroll="" data-options="easing: easeInQuint; speed: 800;" >BLOG</a></li>
                      <li><a href="#portfolio"  data-scroll="" data-options="easing: easeInQuint; speed: 800;" >PORTFOLIO</a></li>
                      <li><a href="#contact"  data-scroll="" data-options="easing: easeInQuint; speed: 800;">CONTACT</a></li>
                    </ul>
@@ -54,13 +55,13 @@
       <div class = "m-section-about container">
         <aside style = "position:absolute;display:block;left:50%;margin-left: -319px;">            
               <img style = "display:inline-block;position:relative;" src="images/taylor.jpg" width = "200" class="img-circle m-about-image">
-            <div class = "m-about-desc animated fadeInUp" style = "position:relative;display:inline-block;top: 40px;padding-left:2em">
-              <span class = "m-about-title">Hi, I'm Taylor.</span><br>
-              <span class = "m-about-sub-title">I'm a Mobile + Web Developer.</span>
+            <div class = "m-about-desc" style = "position:relative;display:inline-block;top: 40px;padding-left:2em">
+              <span  data-wow-delay="0.2s" class = "wow delay-1 m-about-title fadeInUp">Hi, I'm Taylor.</span><br>
+              <span  data-wow-delay="0.4s" class = "wow delay-2 m-about-sub-title flipInY">I'm a Mobile + Web Developer.</span>
             </div>
         </aside>
           <br><br>
-        <aside style = "position:absolute;bottom:10px;font-size:30px;left:50%;" class = "anim bounce">
+        <aside style = "position:absolute;bottom:50px;font-size:30px;left:50%;" class = "m-arrow-down anim bounce">
             <a href="#blog"  data-scroll="" data-options="easing: easeInOutQuad"><i class="fa fa-angle-down fa-lg"></i></a>
         </aside>
       </div>
@@ -72,19 +73,19 @@
         <div style = "display:block">
                    <div class = "row" align = "center">
                       <div class="col-md-3">
-                          <div><img src="images/processes/plan.png" width = "200" data-wow-delay="0.2s" class="wow delay-1 img-circle scale-in-anim img-responsive" ></div>
+                          <div><img src="images/processes/plan.png" width = "200" data-wow-delay="0.2s" class="wow delay-1 scale-in-anim img-responsive" ></div>
                           <div><h2 data-wow-delay="0.2s" class = "wow delay-1 fadeInUp">Plan</h2></div>
                       </div>
                       <div class="col-md-3">
-                          <div><img src="images/processes/design.png" data-wow-delay="0.4s" width = "200" class="wow delay-2 img-circle scale-in-anim img-responsive"></div>
+                          <div><img src="images/processes/design.png" data-wow-delay="0.4s" width = "200" class="wow delay-2 scale-in-anim img-responsive"></div>
                           <div><h2 data-wow-delay="0.4s" class = "wow delay-2 fadeInUp">Design</h2></div>
                       </div>
                       <div class="col-md-3">
-                          <div><img src="images/processes/develop.png"data-wow-delay="0.6s" width = "200" class="wow delay-3 img-circle scale-in-anim img-responsive"></div>
+                          <div><img src="images/processes/develop.png"data-wow-delay="0.6s" width = "200" class="wow delay-3 scale-in-anim img-responsive"></div>
                           <div><h2 data-wow-delay="0.6s" class = "wow delay-3 fadeInUp">Develop</h2></div>
                       </div>
                       <div class="col-md-3">
-                          <div><img src="images/processes/test.png"data-wow-delay="0.8s" width = "200" class="wow delay-4 img-circle scale-in-anim img-responsive"></div>
+                          <div><img src="images/processes/test.png"data-wow-delay="0.8s" width = "200" class="wow delay-4 scale-in-anim img-responsive"></div>
                          <div><h2 data-wow-delay="0.8s" class = "wow delay-4 fadeInUp">Test</h2></div>
                       </div>
                   </div>
@@ -95,8 +96,40 @@
       <div class = "container">
         <h1>BLOG</h1>
         <br><br>
-        <div>
-            <div align = "center">
+          <div class = "container">
+                   <div class = "row" align = "center">
+                      <div class=" m-col-blog col-lg-4 col-sm-4 col-6 img-responsive">
+                         <div class = "thumbnail">
+                            <a href="#" class="wow delay-4 scale-in-anim">
+                              <img src="http://placehold.it/350x200/FDD04E/FFF" class = "img-responsive">
+                            </a>
+                            <p class = "subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>  
+                         </div>
+                      </div>
+                     <div class=" m-col-blog col-lg-4 col-sm-4 col-6 img-responsive">
+                         <div class = "thumbnail">
+                            <a href="#" class="wow delay-4 scale-in-anim">
+                              <img src="http://placehold.it/350x200/449955/FFF" class = "img-responsive" class = "img-responsive">
+                            </a>
+                            <p class = "subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>  
+                         </div>
+                      </div>
+                      <div class=" m-col-blog col-lg-4 col-sm-4 col-6 img-responsive">
+                         <div class = "thumbnail">
+                            <a href="#" class="wow delay-4 scale-in-anim">
+                              <img src="http://placehold.it/350x200/1277CF/FFF" class = "img-responsive">
+                            </a>
+                            <p class = "subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>  
+                         </div>
+                      </div>
+                  </div>
+                      <a href="#" class="btn btn-large">MORE ARTICLES</a>
              </div>
         </div>
       </div>
@@ -107,7 +140,6 @@
         <br><br>
         <div>
             <div align = "center">
-                  
              </div>
         </div>
       </div>
@@ -136,10 +168,10 @@
                     <div class="row">
                           <label class = "col-md-2"></label>
                               <div>
-                                  <textarea placeholder = "Message" class="form-control m-frm-textarea col-md-5 " rows="3" rows="5" cols="3" name="sender_message"></textarea>
+                                  <textarea placeholder = "Message" data-rule = "required" class="form-control m-frm-textarea col-md-5 " rows="3" rows="5" cols="3" name="sender_message"></textarea>
                               </div>
                     </div><br>
-                        <div>
+                    <div>
                           <input type="submit" id = "btn_submit" class="btn btn-large" value="SEND MESSAGE">
                     </div><br> 
                 </form>
@@ -157,15 +189,20 @@
             </div>
             <div class = "m-footer-block">
               <ul class="list-inline" style = "float:right">
-                <li><a target = "_blank" href="https://twitter.com/myajdeguzman"><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a target = "_blank"  href="http://github.com/aljanix"><i class="fa fa-github fa-lg"></i></a></li>
-                <li><a target = "_blank"  href="http://facebook.com/aljohnix"><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a target = "_blank"  href="http://plus.google.com/+aljohndeguzman"><i class="fa fa-google-plus fa-lg"></i></a></li>
-                <li><a target = "_blank"  href="http://ph.linkedin.com/pub/aljohn-de-guzman/57/b82/4b5/"><i class="fa fa-linkedin fa-lg"></i></li>
+                <li><a class = "m-social-links" target = "_blank" href="https://twitter.com/myajdeguzman"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a class = "m-social-links" target = "_blank"  href="http://github.com/aljanix"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a class = "m-social-links" target = "_blank"  href="http://facebook.com/aljohnix"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a class = "m-social-links" target = "_blank"  href="http://plus.google.com/+aljohndeguzman"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                <li><a class = "m-social-links" target = "_blank"  href="http://ph.linkedin.com/pub/aljohn-de-guzman/57/b82/4b5/"><i class="fa fa-linkedin fa-lg"></i></li>
               </ul>
             </div>
         </div>
     </nav>
+    <div id="tops" style="display: block;">
+      <a  href="#about"  data-scroll="" data-options="easing: easeInOutQuad" title="Back to the top">
+          <i class="fa fa-angle-up fa-lg"></i>
+      </a>
+    </div>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
@@ -174,6 +211,7 @@
     <script>
         smoothScroll.init();
         new WOW().init();
+        $('#tops').hide();
     </script>
   </body>
 </html>
