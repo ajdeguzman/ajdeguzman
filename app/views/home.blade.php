@@ -268,7 +268,7 @@
             <div class = "m-footer-block">
               <ul class="m-footer-list">
                 <li><a class = "m-social-links" target = "_blank" href="https://twitter.com/myajdeguzman"><i class="fa fa-twitter fa-2x"></i></a></li>
-                <li><a class = "m-social-links" target = "_blank"  href="http://github.com/aljanix"><i class="fa fa-github fa-2x"></i></a></li>
+                <li><a class = "m-social-links" target = "_blank"  href="http://github.com/ajdeguzman"><i class="fa fa-github fa-2x"></i></a></li>
                 <!--<li><a class = "m-social-links" target = "_blank"  href="http://facebook.com/aljohnix"><i class="fa fa-facebook fa-lg"></i></a></li>
                 <li><a class = "m-social-links" target = "_blank"  href="http://plus.google.com/+aljohndeguzman"><i class="fa fa-google-plus fa-lg"></i></a></li>-->
                 <li><a class = "m-social-links" target = "_blank"  href="http://ph.linkedin.com/pub/aljohn-de-guzman/57/b82/4b5/"><i class="fa fa-linkedin fa-2x"></i></li>
